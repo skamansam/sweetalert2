@@ -1,6 +1,5 @@
-@use "sass:meta";
-@use "../variables";
-
+@use 'sass:meta';
+@use '../variables';
 @use 'sass:math';
 
 div:where(.swal2-container) {
@@ -178,7 +177,10 @@ div:where(.swal2-container) {
         }
 
         &:active {
-          background-image: linear-gradient(variables.$swal2-button-darken-active, variables.$swal2-button-darken-active);
+          background-image: linear-gradient(
+            variables.$swal2-button-darken-active,
+            variables.$swal2-button-darken-active
+          );
         }
       }
     }
